@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+.mainPage {
+  
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #171717;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mainPage button{
+
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  //  flex-wrap: wrap;
+  
+}
+.card1 {
+  margin: 10px;
+  background-color: rgb(93, 91, 91);
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  width: max-content;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px;
+  min-height: 250px;
+
+}
+.card-body p{
+  line-height:35px;
+  font-size: 18px;
+  margin: 0 0 0px;
+  color: rgb(241, 237, 237);
+
+}
+.card-body h4{
+  font-size: xx-large;
+  margin-top: 10px;
+  color: rgb(245, 241, 241);
+  font-weight: 500;
+}
+.managertext p{
+  line-height: 45px;
+  // margin-top: 100px;
+}
+.textmaker{
+  margin-top: 15px;
+}
+
+.tag {
+  background: aqua;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top:10px ;
+  color: rgb(10, 10, 10);
+  padding: 5px 15px;
+  font-weight: 600;
+ 
+ 
+  
+  cursor: pointer;
+}
+
+
+
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #545d7a;
+}
+@media (min-width:370px)and (max-width:380px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1250px;
+    padding: 0;
+
+  }
+  .managertext{
+    padding: 0px 0px;
+  }
+  .card1{
+    width: 350px;
+  }
+  .card-body{
+    padding: 0px 10px;
+  }
+}
+@media (min-width:380px)and (max-width:600px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1100px;
+    padding: 0;
+
+  }
+  .managertext{
+    padding: 0px 0px;
+  }
+  .card1{
+    width: 350px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+
+@media(min-width:600px) and (max-width:1000px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+   
+  }
+  .card1{
+    width: 90%;
+  }
+  
+  
+  .card-body p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 10px 25px;
+  border: 2px solid rgb(7, 145, 250);
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background: transparent;
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.btn-6 {
+  background: aqua;
+ color: black;
+ line-height: 42px;
+ padding: 0;
+ border: none;
+}
+.btn-6 span {
+ position: relative;
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+ position: absolute;
+ content: "";
+ height: 0%;
+ width: 2px;
+ background: aqua;
+}
+.btn-6:before {
+ right: 0;
+ top: 0;
+ transition: all 500ms ease;
+}
+.btn-6:after {
+ left: 0;
+ bottom: 0;
+ transition: all 500ms ease;
+}
+.btn-6:hover{
+ color: white;
+ background: transparent;
+ transform: translate(10px,0px);
+ transition: all 500ms;
+}
+
+.btn-6:hover:before {
+ transition: all 500ms ease;
+ height: 100%;
+}
+.btn-6:hover:after {
+ transition: all 500ms ease;
+ height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+ position: absolute;
+ content: "";
+ background: aqua;
+}
+.btn-6 span:before {
+ left: 0;
+ top: 0;
+ width: 0%;
+ height: 2px;
+ transition: all 500ms ease;
+}
+.btn-6 span:after {
+ right: 0;
+ bottom: 0;
+ width: 0%;
+ height: 2px;
+ transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+ width: 100%;
+}
+.btn-6 span:hover:after {
+ width: 100%;
+}

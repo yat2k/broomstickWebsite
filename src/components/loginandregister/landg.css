@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 100vh;
+   
+    
+}
+
+.formWrapper {
+    background-color: white;
+    padding: 3% 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    align-items: center;
+}
+.title{
+    font-size: 250%;
+    font-weight: 800;
+    color:rgb(254, 60, 6);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formWrapper input{
+    padding: 15px ;
+    border: none;
+    width: 250px;
+    border-bottom: 1px solid #a7bcff;
+  
+}
+.formWrapper input::placeholder {
+    color: rgb(175, 175, 175);
+  }
+ button{
+    background-color: #1E1E1E;
+          color: white;
+          padding: 8px 20px;
+          font-weight: bold;
+          border: none;
+          margin-top: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          font-family: 'Anton', sans-serif;
+          letter-spacing: 1px;
+          font-size: 20px;
+}
+.formWrapper p{
+    font-size: medium;
+    text-shadow: #a7bcff;
+    color: grey;
+    margin-top: 2%;
+    font-size: small;
+}
+.closebtn{
+    position: absolute;
+    top: 10px;
+   
+    right: 10px;
+}
+.linkSection{
+    font-size: medium;
+    margin-left: 5px;
+}
+.errorMessage{
+    text-align: center;
+    color: red;
+    font-weight: 400;
+    font-size: medium;
+}

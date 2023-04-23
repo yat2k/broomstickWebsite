@@ -1,0 +1,27 @@
+.page{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    display: flex;
+    width:50%;
+    justify-content: center;
+    height: 700px;
+    margin-top: 40px;
+    
+}
+
+.leftpart{
+    float: left;
+}
+
+.rightpart{
+    align-items: center;
+    
+    float: left;
+}
+
+.lifeskillsImg{
+    height: 90%;
+    margin: auto;
+    
+}

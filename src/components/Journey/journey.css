@@ -1,0 +1,75 @@
+.t{
+    color: red;
+    visibility: hidden;
+    
+}
+.journeyImg{
+    width: 100%;
+}
+
+.page{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    display: flex;
+    width:50%;
+    justify-content: center;
+    height: 500px;
+    
+}
+.left{
+
+    align-items: center;
+    
+    float: left;
+}
+.right{
+    
+    float: left;
+}
+
+.journeyFoundersImg{
+    height: 100%;
+    margin: auto;
+}
+.journeyFinaleImg{
+    height: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.bg{
+    width: 60%;
+    height:100%;
+    margin:auto;
+    object-fit: cover;
+}
+
+.carouselContainer{
+    align-items: center;
+}
+
+.journeyBigImage{
+    padding: 10px;
+    display: flex;
+    width:50%;
+    
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.imageSection h2{
+    
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.journeyFounderSelfie{
+    margin-top: 100px;
+    width: 100%;
+    padding: 0;
+
+}

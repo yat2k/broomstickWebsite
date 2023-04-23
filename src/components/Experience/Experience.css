@@ -1,0 +1,102 @@
+.Experience{
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.Exp-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: underline #ff5e14;
+    margin-bottom: 10px;
+}
+.Exp-cards{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.slide-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* overflow: auto; */
+    /* overflow-x: hidden; */
+    animation: scrolling 10s linear infinite;
+}
+@keyframes scrolling {
+    0% { transform: translateX(0)  ;} 
+    100% { transform: translateX(-40%) ; }
+}
+.slide-content:hover {
+    animation-play-state: paused;
+}
+.card {
+    background: #111;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 10px; */
+    height: 100%;
+    width: 20%;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 10px solid #000;
+}
+.card .logo {
+    height: 110px;
+    width: 150px;
+    padding: 10px;
+}
+.card .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+.card .package {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border: 1px solid #111;
+    border-radius: 8px;
+    transform: translateY(100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0); */
+    /* clip-path: polygon(0 0, 0 0, 100% 100%, 100% 100%); */
+    transition: all 0.3s;
+}
+.card:hover .package{
+    transform: translateY(0);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}  
+@media (max-width: 801px) {
+    .card {
+        width: 50%;
+    }
+    @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-40%); }
+}
+.card .package {
+    font-size: 10px;
+}
+}
