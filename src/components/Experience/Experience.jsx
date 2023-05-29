@@ -1,12 +1,12 @@
 import React from 'react';
 import './Experience.css';
-import Elevate from '../../components/assets/Elevate.png';
-import Ktech from '../assets/Ktech.png';
-import TieMysuru from '../assets/TiE Mysuru.jpg';
-import NieUniversity from '../assets/NIE_University_logo.svg.png';
-import MathWorks from '../assets/logo_mathworks-1024x512.png';
-import SFAL from '../assets/SFAL.webp';
-import SKarnataka from '../assets/start-up karnataka.png'
+import Elevate from '../../components/assets/Orgs/Elevate.png';
+import Ktech from '../assets/Orgs/Ktech.png';
+import TieMysuru from '../assets/Orgs/TiE Mysuru.jpg';
+import NieUniversity from '../assets/Orgs/NIE_University_logo.svg.png';
+import MathWorks from '../assets/Orgs/logo_mathworks-1024x512.png';
+import SFAL from '../assets/Orgs/SFAL.webp';
+import SKarnataka from '../assets/Orgs/start-up karnataka.png'
 
 
 const Photos = [

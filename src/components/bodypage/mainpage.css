@@ -25,11 +25,9 @@
   
 }
 
-.mainpageImage{
-  margin: 0 auto;
-  width: 509px;
-  height: 531px;
-  display: block;
+.mainpageImg{
+  width: 60%;
+  margin:15%;
   
 }
 

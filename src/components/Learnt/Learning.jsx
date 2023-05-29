@@ -1,10 +1,13 @@
 import React from "react";
 import "./learning.css";
 import lifeskills from "../../components/assets/lifeskills.png";
+import Navbar from '../navbar/Navbar'
+import Given from '../learning/Given'
 
 export default function Learning() {
   return (
-    <>
+    <> 
+      <Navbar/>
       <div className="leftpart page">
         <article>
           <h1
@@ -44,6 +47,7 @@ export default function Learning() {
       <div className="rightpart page">
         <img src={lifeskills} alt="founders" className="lifeskillsImg" />
       </div>
+      <Given/>
     </>
   );
 }

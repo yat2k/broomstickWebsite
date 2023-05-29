@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './components/Home/Home'
 import Landingpage from './components/hiringpage/Landingpage'
 import Internshipform from './components/hiringpage/Inputforms/Internshipform'
-
+import Learning from './components/Learnt/Learning'
 
 import {
   BrowserRouter,
@@ -22,6 +22,7 @@ export default function App() {
    <Routes>
     <Route path='/'>
       <Route index element={ <Home />} />
+      <Route path='lifeskills' element={<Learning/>} />
       <Route path='register' element={<Register/>} />
       <Route path='login' element={<Login/>} />
       <Route path='hiring' element={<Hiring/>} />

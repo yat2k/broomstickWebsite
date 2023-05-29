@@ -1,82 +1,105 @@
 import React from "react";
-import { Carousel } from '@mantine/carousel';
+import { Carousel } from "@mantine/carousel";
 
-import journey from "../assets/ourJourneyText.png";
 import "./journey.css";
-import BroomstickFounders from "../assets/BroomstickFounders.png";
-import journeyFinale from '../assets/journeyFinale.jpeg'
-import dirtyTable from '../assets/Dirty table.jpg'
-import ktechNewOffice from '../assets/Ktech New Office - 1st Day.jpg'
-import img2 from '../assets/img2.png'
-import newOffice from '../assets/New office - 1.jpeg'
-import chassisTest from '../assets/Chassis testing - 2.jpg'
-import lastToLeave from '../assets/Last one to leave.jpg'
-import founderSelfie from '../assets/journeyFounderSelfie.png'
+
+import journeyFinale from "../assets/journeyFinale.jpeg";
+import dirtyTable from "../assets/Dirty table.jpg";
+import ktechNewOffice from "../assets/Ktech New Office - 1st Day.jpg";
+import img2 from "../assets/img2.png";
+import newOffice from "../assets/New office - 1.jpeg";
+import chassisTest from "../assets/Chassis testing - 2.jpg";
+import intern1 from "../assets/carousel/Intern-Gautami.jpg";
+import intern2 from "../assets/carousel/Intern-Mann.jpg";
+import intern3 from "../assets/carousel/Intern-Raashi.jpg";
+import startUpKarnataka from "../assets/Orgs/start-up karnataka.png"
+import bolstart from "../assets/Orgs/bolstart.png"
+import ktech from "../assets/Orgs/Ktech.png"
+import elevate from "../assets/Orgs/Elevate.png"
+import mathwork from "../assets/Orgs/logo_mathworks-1024x512.png"
+import nie from "../assets/Orgs/NIE_University_logo.svg.png"
+import tie from "../assets/Orgs/TiE Mysuru.jpg"
+import sfal from "../assets/Orgs/SFAL.webp"
 
 const Journey = () => {
   return (
     <>
-      <img src={journey} className="journeyImg" alt="journey"></img>
+      {/* <img src={journey} className="journeyImg" alt="journey"></img> */}
       <div className="left page">
-        <img src={BroomstickFounders} alt="founders" className="journeyFoundersImg"/>
+        <iframe
+          width="75%"
+          height="75%"
+          src="https://youtube.com/embed/RxzmkA33KvQ"
+        ></iframe>
       </div>
       <div className="right page">
-      <article>
-        <h1 style={{
-            fontFamily : 'Anton,sans-serif',
-            fontSize : '100px',
-            marginBottom : 0,
-            marginTop : 10
-        }}> The Journey</h1>
-        <br/>
-        <p style={{
-          width:"60%",
-          margin:"auto",
-          fontSize: "24px",
-          textAlign: "left",
-        }}>1. It started off as engineering project –– “The West has Vacuum cleaners for their carpeted floors but Us, Why are we still using Centuries old tech – Time we need an upgrade!”</p>
+        <article>
+          <h1
+            style={{
+              fontFamily: "Anton,sans-serif",
+              fontSize: "100px",
+              marginBottom: 0,
+              marginTop: 10,
+            }}
+          >
+            {" "}
+            The Journey
+          </h1>
+          <br />
+          <p
+            style={{
+              width: "60%",
+              margin: "auto",
+              fontSize: "24px",
+              textAlign: "left",
+            }}
+          >
+            content to be changed
+          </p>
         </article>
       </div>
-      <br/>
+      <br />
       <div className="left page">
-      <article>
-      <h2> The Journey</h2>
-      <p style={{
-          width:"80%",
-          margin:"auto",
-          fontSize: "24px",
-          textAlign:"left",
-        }}>2.Just then TiEPitchfest was announced – We planned to participate and in record 45 days – We put together a working-prototype and business plan!<br/>
-      3.Cometh the PitchFest, Cometh the Zeal - we emerge in TOP 4 out of 48 startups across Karnataka, competing against funded start-ups – We were rightfully the Under-dogs!<br/>
-      4.Thanks to Ktech and TiE Mysuru, we got a sponsored incubation for 6 months at Ktech – We worked to perfect our business plan and designs and put together a completely in-house designed prototype to demonstrate our tech capability and competed at the Elevate Event!<br/>
-      5.But this journey of 6 months wasn’t easy, We did have our share of ups and down!<br/>
-      6.We have since then showcased our work. This strengthened our resolute to solve the cleaning problems of India and come up with the best-in-class solutions! We are now at NIE and We are on constant lookout for Crazy-Caffeine dipped Engineers!
-      </p>
-      </article>
+        <article>
+          <h2> The Journey</h2>
+          <p
+            style={{
+              width: "80%",
+              margin: "auto",
+              fontSize: "24px",
+              textAlign: "left",
+            }}
+          >
+            content to be changed... along with the image.
+          </p>
+        </article>
       </div>
-      <br/>
+      <br />
       <div className="right page">
-        <img src={journeyFinale} className='journeyFinaleImg'></img>
+        <img src={journeyFinale} className="journeyFinaleImg"></img>
       </div>
       <h2 className="t">hello</h2>
-      <br/>
-      <JourneyCarousel/>
-        <br/>
-      <div className="imageSection">
-        <img src={lastToLeave} className="journeyBigImage"/>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum congue ex, sed mollis sem congue vitae. Mauris ornare, velit ut malesuada faucibus, sapien nulla elementum justo, feugiat dictum ex dui quis nulla.</h2>
-
-        <img src={founderSelfie} className="journeyFounderSelfie" />
-      </div>
+      <br />
+      <JourneyCarouselPics />
+      <br />
+      <h1 style={{ color: "white", textAlign: "center" }}>
+        The Misfits Who Make Up The Team
+      </h1>
+      <br />
+      <JourneyCarouselTeam />
+      <br />
+      <h1 style={{ color: "white", textAlign: "center" }}>
+        Organisations Backing Us
+      </h1>
+      <br />
+      <JourneyCarouselOrgs />
     </>
   );
 };
 
 export default Journey;
 
-
-
-function JourneyCarousel() {
+function JourneyCarouselPics() {
   return (
     <Carousel
       withIndicators
@@ -91,106 +114,101 @@ function JourneyCarousel() {
       // ]}
       className="journeyCarousel"
     >
-      <Carousel.Slide style={{marginLeft:"70px"}}><img src={ktechNewOffice} className="bg"/></Carousel.Slide>
-      <Carousel.Slide style={{alignItems:'center'}}><img src={dirtyTable} className="bg"/></Carousel.Slide>
-      <Carousel.Slide style={{alignItems:'center'}}><img src={img2} className="bg"/></Carousel.Slide>
-      <Carousel.Slide style={{alignItems:'center'}}><img src={newOffice} className="bg"/></Carousel.Slide>
-      <Carousel.Slide style={{alignItems:'center'}}><img src={chassisTest} className="bg"/></Carousel.Slide>
-      
+      <Carousel.Slide style={{ marginLeft: "70px" }}>
+        <img src={ktechNewOffice} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={dirtyTable} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={img2} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={newOffice} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={chassisTest} className="bg" />
+      </Carousel.Slide>
+
       {/* ...other slides */}
     </Carousel>
   );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function JourneyCarouselTeam() {
+  return (
+    <Carousel
+      withIndicators
+      height="80%"
+      slideSize="40%"
+      slideGap="20px"
+      loop
+      align="start"
+      // breakpoints={[
+      //   { maxWidth: 'md', slideSize: '50%' },
+      //   { maxWidth: 'sm', slideSize: '100%', slideGap: 10 },
+      // ]}
+      className="journeyCarousel"
+    >
+      <Carousel.Slide style={{ marginLeft: "200px" }}>
+        <img src={intern1} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={intern2} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={intern3} className="bg" />
+      </Carousel.Slide>
+
+      {/* ...other slides */}
+    </Carousel>
+  );
+}
+
+function JourneyCarouselOrgs() {
+  return (
+    <Carousel
+      withIndicators
+      height={300}
+      slideSize="33%"
+      slideGap="20px"
+      loop
+      align="start"
+      // breakpoints={[
+      //   { maxWidth: 'md', slideSize: '50%' },
+      //   { maxWidth: 'sm', slideSize: '100%', slideGap: 10 },
+      // ]}
+      className="journeyCarousel"
+    >
+      <Carousel.Slide style={{ marginLeft: "70px" }}>
+        <img src={nie} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={tie} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={elevate} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={bolstart} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={ktech} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={mathwork} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={sfal} className="bg" />
+      </Carousel.Slide>
+      <Carousel.Slide style={{ alignItems: "center" }}>
+        <img src={startUpKarnataka} className="bg" />
+      </Carousel.Slide>
+
+      {/* ...other slides */}
+    </Carousel>
+  );
+}
 
 
 
